@@ -10,6 +10,8 @@ getChickenSoup = (err, res) => {
     } else {
       res.send({
         list: data,
+        status: 200,
+        message: "获取成功",
       });
     }
   };
