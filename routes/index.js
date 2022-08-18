@@ -1,7 +1,6 @@
 var express = require("express");
 var router = express.Router();
-const cate = require("../module/user");
-/* GET home page. */
-router.get("/", cate.getCate);
-
+const chickenSoup = require("../module/chicken_soup");
+// 鸡汤短句
+router.get("/chicken_soup", chickenSoup.getChickenSoup);
 module.exports = router;
